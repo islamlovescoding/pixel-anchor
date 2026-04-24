@@ -15,19 +15,13 @@ screen = pygame.display.set_mode((1920, 1080))
 
 # variables
 
-pygame_initials = [{
-    "clock" : pygame.time.Clock(),
-    "running" : True
-}]
+clock = pygame.time.Clock()
+running = True
 
-fonts = [{
-    "text_font" : pygame.font.SysFont("Times New Roman", 35),
-}]
+text_font = pygame.font.SysFont("Times New Roman", 35)
 
-images = [{
-    "background" : pygame.image.load("Assets/main_menu.png").convert_alpha(),
-    "main_menu" : True,
-}]
+background = pygame.image.load("Assets/main_menu.png").convert_alpha()
+main_menu = True
 
 selected = None
 
@@ -51,13 +45,13 @@ def pick_image_file():
 
 # main loop
 
-while pygame_initials[0]["running"]:
+while running:
 
     mouse_x, mouse_y = pygame.mouse.get_pos()
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            pygame_initials[0]["running"] = False
+            running = False
         elif event.type == pygame.MOUSEBUTTONDOWN:
             mouse_x, mouse_y = event.pos
 
@@ -81,7 +75,7 @@ while pygame_initials[0]["running"]:
             if event.key == pygame.K_l:
                 image_path = pick_image_file()
                 if image_path:
-                    images[0]["main_menu"] = False
+                    main_menu = False
 
                     image = pygame.image.load(image_path).convert_alpha()
                     image_rect = image.get_rect()
@@ -121,13 +115,13 @@ while pygame_initials[0]["running"]:
                     if idx > 0:
                         images_list[idx], images_list[idx - 1] = images_list[idx - 1], images_list[idx]
             if event.key == pygame.K_x:
-                pygame_initials[0]["running"] = False
+                running = False
 
 
     screen.fill((0, 0, 0))
 
-    if images[0]["main_menu"]:
-        screen.blit(images[0]["background"], (0, 0))
+    if main_menu:
+        screen.blit(background, (0, 0))
 
     for img, rect, alpha in images_list:
         img.set_alpha(alpha)
@@ -137,12 +131,12 @@ while pygame_initials[0]["running"]:
         x, y = selected[1].topleft
 
         coord_text = f"x: {x}, y: {y}"
-        text_surface = fonts[0]["text_font"].render(coord_text, True, (255, 255, 255))
+        text_surface = text_font.render(coord_text, True, (255, 255, 255))
 
         screen.blit(text_surface, (10, 10))
 
     pygame.display.flip()
-    pygame_initials[0]["clock"].tick(60)
+    clock.tick(60)
 
 pygame.quit()
 sys.exit()
