@@ -1,15 +1,15 @@
-#Pixel Anchor
+# Pixel Anchor
 Pixel Anchor is a lightweight Pygame utility tool that helps you visually position images on a screen and extract their exact coordinates without manual trial-and-error adjustments.
 It is designed to remove the frustration of repeatedly tweaking (x, y) values when placing sprites, UI elements, or backgrounds in Pygame projects.
 
-##What it solves
+## What it solves
 ---
 -Eliminates guessing coordinates in Pygame layouts
 -Removes repetitive repositioning during UI/sprite alignment
 -Provides instant visual feedback for placement
 -Allows precise coordinate extraction for code use
 ---
-##Features
+## Features
 ---
 -Drag images freely on a canvas
 -Adjust transparency
@@ -17,18 +17,18 @@ It is designed to remove the frustration of repeatedly tweaking (x, y) values wh
 -Display live coordinates
 -Copy coordinates to clipboard
 ---
-##Controls
+## Controls
 ---
-L → Load image
-Left Click → Select image (top image first)
-Hold Left Click → Drag image
-Up Arrow → Increase opacity
-Down Arrow → Decrease opacity
-E → Move image up one layer
-Q → Move image down one layer
-C → Copy coordinates of selected image
+-L → Load image
+-Left Click → Select image (top image first)
+-Hold Left Click → Drag image
+-Up Arrow → Increase opacity
+-Down Arrow → Decrease opacity
+-E → Move image up one layer
+-Q → Move image down one layer
+-C → Copy coordinates of selected image
 ---
-##Notes
+## Notes
 ---
 this is just a simple pygame helper tool, i came up with it while
 making Aether ( one of my projects ) because i hated how painful it
