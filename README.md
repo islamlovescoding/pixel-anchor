@@ -7,10 +7,10 @@ It is designed to remove the frustration of repeatedly tweaking (x, y) values wh
 
 ---
 
--Eliminates guessing coordinates in Pygame layouts
--Removes repetitive repositioning during UI/sprite alignment
--Provides instant visual feedback for placement
--Allows precise coordinate extraction for code use
+- Eliminates guessing coordinates in Pygame layouts
+- Removes repetitive repositioning during UI/sprite alignment
+- Provides instant visual feedback for placement
+- Allows precise coordinate extraction for code use
 
 ---
 
@@ -18,11 +18,11 @@ It is designed to remove the frustration of repeatedly tweaking (x, y) values wh
 
 ---
 
--Drag images freely on a canvas
--Adjust transparency
--Change layer order
--Display live coordinates
--Copy coordinates to clipboard
+- Drag images freely on a canvas
+- Adjust transparency
+- Change layer order
+- Display live coordinates
+- Copy coordinates to clipboard
 
 ---
 
@@ -30,14 +30,14 @@ It is designed to remove the frustration of repeatedly tweaking (x, y) values wh
 
 
 ---
--L → Load image
--Left Click → Select image (top image first)
--Hold Left Click → Drag image
--Up Arrow → Increase opacity
--Down Arrow → Decrease opacity
--E → Move image up one layer
--Q → Move image down one layer
--C → Copy coordinates of selected image
+- L → Load image
+- Left Click → Select image (top image first)
+- Hold Left Click → Drag image
+- Up Arrow → Increase opacity
+- Down Arrow → Decrease opacity
+- E → Move image up one layer
+- Q → Move image down one layer
+- C → Copy coordinates of selected image
 
 
 ---
