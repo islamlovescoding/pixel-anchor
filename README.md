@@ -57,7 +57,7 @@ It is designed to remove the frustration of repeatedly tweaking (x, y) values wh
 this is just a simple pygame helper tool, i came up with it while
 making Aether ( one of my projects ) because i hated how painful it
 is to guess and try to put the image you loaded perfectly into the
-right place using coordinate. i hope peopel in the pygame community 
+right place using coordinate. i hope people in the pygame community 
 use it and find it helpful.
 
 ---
