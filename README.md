@@ -44,6 +44,7 @@ It is designed to remove the frustration of repeatedly tweaking (x, y) values wh
 - E → Move image up one layer
 - Q → Move image down one layer
 - C → Copy coordinates of selected image
+- V → Copy mouse coordinates
 
 
 ---
