@@ -91,6 +91,10 @@ while running:
                 coord_text = (rect.x, rect.y)
 
                 pyperclip.copy(coord_text)
+            if event.key == pygame.K_v:
+                mouse_text = (mouse_x, mouse_y)
+
+                pyperclip.copy(mouse_text)
 
             if selected is not None:
 
@@ -130,10 +134,14 @@ while running:
     if selected is not None:
         x, y = selected[1].topleft
 
-        coord_text = f"x: {x}, y: {y}"
+        coord_text = f"coordinate x: {x}, coordinate y: {y}"
         text_surface = text_font.render(coord_text, True, (255, 255, 255))
 
-        screen.blit(text_surface, (10, 10))
+        screen.blit(text_surface, (10, 50))
+    
+    mouse_text = f"mouse x: {mouse_x}, mouse y: {mouse_y}"
+    text_surface2 = text_font.render(mouse_text, True, (255, 255, 255))
+    screen.blit(text_surface2, (10, 10))
 
     pygame.display.flip()
     clock.tick(60)
