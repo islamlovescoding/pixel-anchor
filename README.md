@@ -5,6 +5,8 @@ It is designed to remove the frustration of repeatedly tweaking (x, y) values wh
 
 ![Pixel Anchor Demo](Assets/tutorial.gif)
 
+---
+
 ## What it solves
 
 ---
