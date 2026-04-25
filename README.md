@@ -3,11 +3,6 @@
 Pixel Anchor is a lightweight Pygame utility tool that helps you visually position images on a screen and extract their exact coordinates without manual trial-and-error adjustments.
 It is designed to remove the frustration of repeatedly tweaking (x, y) values when placing sprites, UI elements, or backgrounds in Pygame projects.
 
-
-![Uploading tutorial.gif…]()
-
-
-
 ## What it solves
 
 ---
